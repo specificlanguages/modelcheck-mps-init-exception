@@ -10,4 +10,5 @@ jobs:
         with:
           distribution: 'jetbrains'
           java-version: '21'
+      - uses: gradle/actions/setup-gradle@v5
       - run: ./gradlew checkModels --info
