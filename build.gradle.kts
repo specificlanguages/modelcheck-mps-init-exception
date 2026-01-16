@@ -27,4 +27,5 @@ tasks.register<MpsCheck>("checkModels") {
 
     javaLauncher = jbrToolchain.javaLauncher
     pluginRoots.add(mpsDefaults.mpsLibrariesDirectory)
+    dependsOn(tasks.resolveMpsLibraries)
 }
